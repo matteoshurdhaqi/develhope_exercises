@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form id="registration-form" method="post">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <label for="name">Name and Lastname:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <label for="phone">Telephone Number:</label>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <label for="plan">Select Plan:</label>
+        <select id="plan" name="plan">
+            <option value="free">Free Plan</option>
+            <option value="basic">Basic Plan ($9.99/month)</option>
+            <option value="standard">Standard Plan ($19.99/month)</option>
+            <option value="premium">Premium Plan ($29.99/month)</option>
+        </select><br><br>
+
+        <label for="pro-plan">Pro Plan:</label>
+        <input type="checkbox" id="pro-plan" name="pro-plan"><br><br>
+
+        <label for="credit-card">Credit Card Number:</label>
+        <input type="text" id="credit-card" name="credit-card" required><br><br>
+
+        <label for="cvc">CVC:</label>
+        <input type="text" id="cvc" name="cvc" required><br><br>
+
+        <label for="expiration-date">Expiration Date:</label>
+        <input type="text" id="expiration-date" name="expiration-date" required><br><br>
+
+        <label for="billing-address">Billing Address:</label>
+        <textarea id="billing-address" name="billing-address" rows="4" cols="50" required></textarea><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
