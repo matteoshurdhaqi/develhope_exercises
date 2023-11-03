@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: space-between;
+}
+
+.section{
+   height: 100vh;
+   text-align: center;
+   padding-top: 10%;
+}
+.column {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-items: center;
+    gap: 30px;
+}
+
+.yellow{
+    background-color: yellow;
+    width: 15%;
+    justify-content: center;
+    align-items: center;
+}
+.red{
+    background-color: red;
+    width: 15%;
+    justify-content: center;
+    align-items: center;
+}
+.green{
+    background-color: green;
+    width: 12%;
+    
+}
+.orange{
+    background-color: orange;
+    width: 25%;
+}
+.blue{
+    background-color: blue;
+    width: 12%;
+}
+
+.column p:nth-child(n){
+    padding: 16px;
+    background-color: #fff;
+}
+
+.yellow p, .red p{
+    padding-bottom: 10px;
+}
