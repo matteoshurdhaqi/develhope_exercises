@@ -7,14 +7,15 @@
   font-size: 24px;
   font-family: 'Roboto', sans-serif;
 }
-
-a {
-  color: black;
+.text-nav, .text-nav a{
+  color:#fff;
 }
-
+.text-disabled{
+  color: #a3a3a3d8;
+}
 nav {
   width: 100%;
-  background-color: #6c6c6c;
+  background-color: #505050;
 }
 
 .container {
@@ -40,7 +41,6 @@ nav {
 .dropdown-menu{
     position: absolute;
     top: 2.5rem;
-    left: 24rem;
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.45);
     background-color: #4e4e4e;
     border-radius: 4px;
@@ -75,6 +75,8 @@ ul li:hover ul.dropdown-menu{
 .nav_search input{
   padding: 8px;
   border-radius: 6px;
+  background-color: #424242;
+  color: white;
 }
 .nav_search button{
   padding: 8px;
