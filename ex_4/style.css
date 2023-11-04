@@ -19,6 +19,7 @@
     height: 80vh;
     width: 40%;
     margin: auto;
+    box-shadow: 0px 3px 8px 1px #000000;
  }
    
 .result {
@@ -62,7 +63,7 @@
 .minus {grid-area: minus;}
 .moltiplication {grid-area: molti;}
 .division {grid-area: divi;}
-.zero{grid-area: zero;}
+.zero{grid-area: zero; border-bottom-left-radius: 10px;}
 .point{grid-area: point;}
 .ac{grid-area: ac;}
 .three{grid-area: three;}
