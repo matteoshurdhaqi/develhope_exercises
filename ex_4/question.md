@@ -1,0 +1,1 @@
+Look at the layout in the public folder and try to replicate it using CSS Grid properties.
