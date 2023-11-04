@@ -1,71 +1,76 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
-}
+.grid {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+        "res res res res"
+        "plus minus molti divi"
+        "seven eight nine equals"
+        "four five six equals"
+        "one two three equals"
+        "zero point ac equals";
 
-.container{
-    height: 100%;
-    width: 33vw;
-    margin: 0 auto;
-    margin-top: 5%;
-    border-radius: 10px;
-}
-
-.display{
-    background-color: #333334;
+    background-color: rgb(157, 157, 157);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    color: white;
-    text-align: end;
-    padding: 15px;
-}
-.display p{
-    margin-right: 10px;
-    font-size: 30px;
-}
-
-.operations{
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    gap: 2px;
+    height: 80vh;
+    width: 40%;
+    margin: auto;
+ }
+   
+.result {
+    color: #fff;
+    padding-right: 5%;
+    font-size: 2.5rem;
     display: flex;
     align-items: center;
-    text-align: center;
-    background-color: lightgray;
-}
-.operations li{
-    font-size: 30px;
-    padding: 20px;
-    border: 1px solid gray;
-    width: 100%;
-}
-.numbers_container{
-    display: flex;
-}
-.numbers{
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    width: 75%;
-}
-.numbers li{
-    width: 33.33%;
-    border: 1px solid gray;
-    font-size: 30px;
-    padding: 20px;
-}
-.numbers li:nth-child(10){
-    border-bottom-left-radius: 10px;
+    justify-content: end;
+    grid-area: res; 
+    background-color: #4d4d4d;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
 }
 
-.equal{
-    background-color: coral;
+
+.division, .moltiplication, .plus, .minus{
+    text-align: center;
+    padding-top: 25%;
+    font-size: 30px;
+    background-color: #B7B8DE; 
+}
+.equals{
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 25%;
+    background-color:#E98586;
     border-bottom-right-radius: 10px;
     font-size: 30px;
-    border-top: 1px solid gray;
-    border-left: 1px solid gray;
+    grid-area: equals;
 }
+.zero, .one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .point, .ac{
+    background-color: #fff; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+.plus {grid-area: plus;}
+.minus {grid-area: minus;}
+.moltiplication {grid-area: molti;}
+.division {grid-area: divi;}
+.zero{grid-area: zero;}
+.point{grid-area: point;}
+.ac{grid-area: ac;}
+.three{grid-area: three;}
+.two{grid-area: two;}
+.one{grid-area: one;}
+.four{grid-area: four;}
+.five{grid-area: five;}
+.six{grid-area: six;}
+.nine{grid-area: nine;}
+.eight{grid-area: eight;}
+.seven{grid-area: seven;}
