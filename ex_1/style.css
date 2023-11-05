@@ -89,6 +89,10 @@ ul li:hover ul.dropdown-menu{
 .nav_search button:hover{
   background-color: #fff;
 }
+.fa-bars{
+  font-size: 32px;
+  color: #fff;
+}
 .hamburger{
   display: none;
 }
