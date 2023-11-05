@@ -19,11 +19,11 @@ nav {
 }
 
 .container {
-  max-width: 1300px;
+
   margin: 0 auto;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   height: 64px;
 }
 
@@ -89,3 +89,21 @@ ul li:hover ul.dropdown-menu{
 .nav_search button:hover{
   background-color: #fff;
 }
+.hamburger{
+  display: none;
+}
+
+@media screen and (max-width: 890px) {
+   .nav_links, .nav_search{
+      display: none;
+   }
+   .hamburger{
+    display: inline-block;
+    padding-left: 10px;
+   }
+   .container{
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+   }
+} 
