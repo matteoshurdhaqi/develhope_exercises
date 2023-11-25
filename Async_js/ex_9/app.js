@@ -4,12 +4,24 @@
 
 
 function performOperation(a, b, callback) {
-    const res = a * b;
-    return callback(res);
+    if (typeof callback !== 'function') {
+        return new Error('Callback must be a function');
+    }
+
+    try {
+        const res = a + b;
+        return callback(null, res);
+    } catch (error) {
+        return callback(error, null);
+    }
 }
 
-function displayResult(result) {
-    console.log(result);
+function displayResult(err, result) {
+    if (err) {
+        console.log(err);
+    } else {
+        console.log(result);
+    }
 }
 
 performOperation(5, 3, displayResult);
